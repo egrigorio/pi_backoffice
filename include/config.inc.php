@@ -15,8 +15,8 @@ $arrConfig['db'] = 'backoffice_pi';
 
 $arrConfig['isLoginKey'] = 'EqqGu+ya/7ojkou0EMsDpxzUwxOWKHb/KpYEjqCJ4pM=';
 
-$arrConfig['url_site'] = 'http://' . $_SERVER["HTTP_HOST"] . '/tarefa_11-enzogrigorio';
-$arrConfig['dir_site'] = '/Applications/XAMPP/xamppfiles/htdocs/tarefa_11-enzogrigorio'; 
+$arrConfig['url_site'] = 'http://' . $_SERVER["HTTP_HOST"] . '/pi_backoffice';
+$arrConfig['dir_site'] = '/Applications/XAMPP/xamppfiles/htdocs/pi_backoffice'; 
 
 $arrConfig['dir_uploads'] = $arrConfig['dir_site'] . '/uploads/';
 $arrConfig['url_uploads'] = $arrConfig['url_site'] . '/uploads/';
