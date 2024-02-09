@@ -11,7 +11,7 @@ if($_SERVER["HTTP_HOST"] == 'web.colgaia.local' || $_SERVER["HTTP_HOST"] == 'loc
 $arrConfig['host'] = 'localhost';
 $arrConfig['user'] = 'root';
 $arrConfig['pass'] = '';
-$arrConfig['db'] = 'projeto11_portfolio';
+$arrConfig['db'] = 'backoffice_pi';
 
 $arrConfig['isLoginKey'] = 'EqqGu+ya/7ojkou0EMsDpxzUwxOWKHb/KpYEjqCJ4pM=';
 
@@ -27,6 +27,9 @@ $arrConfig['auth_imgType'] = ['image/jpeg', 'image/png', 'image/gif'];
 
 
 // chamada de outros include
+include_once $arrConfig['dir_site'].'/include/db.inc.php';
+include_once $arrConfig['dir_site'].'/include/functions.inc.php';
+
 /* include_once $arrConfig['dir_site'].'/include/functions.inc.php'; 
 include_once $arrConfig['dir_site'].'/include/db.inc.php'; 
 include_once $arrConfig['dir_site'].'/components/navbar.comp.php';

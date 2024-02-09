@@ -46,14 +46,14 @@ include '../include/config.inc.php';
                 </div>
               </div>
               <div class="card-body">
-                <form role="form" class="text-start" onSubmit='../include/trataform.inc.php'>
+                <form role="form" class="text-start" action='../include/tratalogin.inc.php' method='post'>
                   <div class="input-group input-group-outline my-3">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name='email'>
                   </div>
                   <div class="input-group input-group-outline mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control">
+                    <input type="password" class="form-control" name='password'>
                   </div>
                   <div class="form-check form-switch d-flex align-items-center mb-3">
                     <input class="form-check-input" type="checkbox" id="rememberMe" checked>
