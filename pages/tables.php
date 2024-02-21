@@ -52,7 +52,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/dashboard.html">
+          <a class="nav-link text-white " href="../index.php">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -60,7 +60,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="../pages/tables.html">
+          <a class="nav-link text-white active bg-gradient-primary" href="../pages/tables.php">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -264,8 +264,12 @@
           <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+                <div class='d-flex justify-content-between'>
+                  <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+                  <span class='text-white me-4 cursor-pointer'>+</span>
+                </div>
               </div>
+              
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">

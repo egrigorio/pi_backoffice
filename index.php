@@ -1,11 +1,13 @@
 <?php
-session_start();
+@session_start();
 include 'include/config.inc.php';
 
 if (!isset($_SESSION['id'])) {
   header('Location: ./pages/sign-in.php');
   exit;
 }
+
+$_SESSION['tipoLog'] = 'Página principal do B.O.';
 
 ?>
 
@@ -128,7 +130,7 @@ if (!isset($_SESSION['id'])) {
 
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="./dashboard.html">
+          <a class="nav-link text-white " href="./index.php">
 
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
@@ -140,7 +142,7 @@ if (!isset($_SESSION['id'])) {
 
 
         <li class="nav-item">
-          <a class="nav-link text-white " href="./tables.html">
+          <a class="nav-link text-white " href="./pages/tables.php">
 
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>

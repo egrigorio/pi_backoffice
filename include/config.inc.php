@@ -1,6 +1,11 @@
 <?php 
 @session_start();
+include_once 'functions.inc.php';
+
 global $arrConfig;
+
+date_default_timezone_set('Europe/Lisbon');
+
 
 if($_SERVER["HTTP_HOST"] == 'web.colgaia.local' || $_SERVER["HTTP_HOST"] == 'localhost' ){
     error_reporting(E_ALL);
@@ -28,7 +33,9 @@ $arrConfig['auth_imgType'] = ['image/jpeg', 'image/png', 'image/gif'];
 
 // chamada de outros include
 include_once $arrConfig['dir_site'].'/include/db.inc.php';
-include_once $arrConfig['dir_site'].'/include/functions.inc.php';
+
+
+logs();
 
 /* include_once $arrConfig['dir_site'].'/include/functions.inc.php'; 
 include_once $arrConfig['dir_site'].'/include/db.inc.php'; 
